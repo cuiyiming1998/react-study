@@ -12,7 +12,7 @@ class Boss extends Component {
     render() {
         return (
             <div>
-                <div className={'boss'+" "+(this.state.isShow?'show':'hide')}>Boss---孙悟空</div>
+                <div className={'boss '+(this.state.isShow?'show':'hide')}>Boss---孙悟空</div>
                 <div>
                     <Button onClick={this.toToggle}>召唤Boss</Button>
                 </div>
