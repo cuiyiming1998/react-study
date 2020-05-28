@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
-import { Button } from 'antd'
+import React, { Component, Fragment } from 'react';
+import List from './List'
+import Boss from './Boss'
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <Button type="primary">Primary</Button>
-                <p className="app">Hello</p>
-            </div>
-        );
+            <Fragment>
+                <List></List>
+                <Boss></Boss>
+            </Fragment>
+        )
     }
 }
 

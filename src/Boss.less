@@ -1,0 +1,29 @@
+.boss {
+    width: 100vw;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+.show {
+    opacity: 1;
+    animation: boss 1s forwards;
+}
+.hide{
+    opacity: 0;
+}
+
+@keyframes boss {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+        font-size: 1.5rem;
+        color: skyblue;
+    }
+    100% {
+        opacity: 1;
+        font-size: 3rem;
+        color: red;
+    }
+}
