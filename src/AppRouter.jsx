@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route , Link} from 'react-router-dom'
-import Home from './Home/Home'
-import List from './List/List'
-import Boss from './Boss/Boss'
-import Test from './Test/Test'
+import Home from './components/Home/Home'
+import List from './components/List/List'
+import Boss from './components/Boss/Boss'
+import Test from './components/Test/Test'
 
 
 
