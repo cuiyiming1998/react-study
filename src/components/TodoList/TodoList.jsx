@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Input, Button, List } from 'antd'
+import axios from 'axios'
 import store from '../../store'
 import './style.less'
 
@@ -57,6 +58,17 @@ class TodoList extends Component {
                 </div>
             </div>
         );
+    }
+
+    componentDidMount(){
+        axios.get('https://www.fastmock.site/mock/44ed3303592068e97c681ba9b7c2d35a/react/api/test')
+        .then((res)=>{
+            const action = {
+                type: 'getList',
+                data: res.data.data
+            }
+            store.dispatch(action);
+        })
     }
 }
 
