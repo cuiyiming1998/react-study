@@ -1,12 +1,13 @@
 import React, { Component, Fragment } from 'react';
-import TodoList from './components/TodoList/TodoList'
-// import AppRouter from './components/AppRouter'
+// import TodoList from './components/TodoList/TodoList'
+// import Hooks from './components/Hooks/Hooks'
+import AppRouter from './AppRouter';
 
 class App extends Component {
     render() {
         return (
             <Fragment>
-                <TodoList></TodoList>
+                <AppRouter></AppRouter>
             </Fragment>
         )
     }
